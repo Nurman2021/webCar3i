@@ -1,0 +1,22 @@
+.box1{
+    width: 200px;
+    height: 200px;
+    border: solid black 1px;
+    
+}
+
+.box2{
+    width: 200px;
+    height: 200px;
+    box-sizing: inherit;
+    border: solid black 10px;
+}
+
+.box3{
+    width: 200px;
+    height: 200px;
+    border: solid black 1px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
