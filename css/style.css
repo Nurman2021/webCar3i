@@ -1,13 +1,13 @@
 :root{
---white-primary: #ffff;
---black-primary: #000;
---blue-primary: #3E86F5;
---black-75: #7c7c7c;
+    --white-primary: #ffff;
+    --black-primary: #000;
+    --blue-primary: #3E86F5;
+    --black-75: #7c7c7c;
 }
 
 /* ------------- fonts ------------- */
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 
 .text-white{
@@ -26,16 +26,17 @@
 *{
     margin: 0;
     padding: 0;
-    /* border: solid var(--blue-primary) 1px; */
+     border: solid var(--blue-primary) 1px; 
     font-family: 'Poppins', sans-serif;
     font-style: normal;
 
-   
+
 }
+
 
 a{
     text-decoration: none;
-    color: var(--black-primary);
+    color:var(--white-primary);
 }
 
 strong{
@@ -160,10 +161,11 @@ nav  li{
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1); 
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-around;
     padding: 60px;
     box-sizing: border-box; 
-  
+
 }
 .main-bar-link{
     height: 66px;
@@ -180,26 +182,11 @@ nav  li{
     border-radius: 25px;
     height: 154px;
     width: 381px;
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     margin-right: 30px;
     /* box-sizing: border-box; */
 }
-
- 
-/* 
-.length-box1{
-    width: 381px;
-    box-sizing: border-box;
-
-}
-
-.length-box2{
-    width: 477px;
-    box-sizing: border-box;
-} */
-
-
 
 .panel-icon{
     width: 40px;
@@ -248,7 +235,7 @@ nav  li{
     "C C C C C"
     "D D D D D"
     "E E E E E";
-   
+
 }
 
 .offer-img{
@@ -343,6 +330,7 @@ nav  li{
     background-position: center;
     background-size: cover;
     grid-area: banner;
+    position: relative;
 }
 
 .population{
@@ -364,24 +352,25 @@ nav  li{
     display: block;
 }
 
+
 .population-1{
     position: absolute;
-    margin-top: 55px;
-    left: 471px;
+    top: 55px;
+    left: 385px;
 
 }
 
 .population-2{
     position: absolute;
-    margin-top: 376px;
-    left: -7px;
+    top: 376px;
+    left: -90px;
 
 }
 
 .population-3{
     position: absolute;
-    margin-top: 537px;
-    left: 483px;
+    top: 537px;
+    left: 385px;
 }
 
 .contact-main{
@@ -407,6 +396,7 @@ nav  li{
     font-size: 20px;
     line-height: 40px;
     color: var(--black-75);
+    list-style: "- ";
 }
 
 .contact-button{
@@ -434,15 +424,15 @@ nav  li{
     display: grid;
     grid-template-rows: 72px 40px 46px 79px 293px;
     grid-template-areas:
-     "header"
-     "."
-     "button-bar"
-     "."
-     "card-bar"
-   ;
-   justify-content: center;
-   margin: 120px auto 120px auto;
-   /* top | right | bottom | left */
+    "header"
+    "."
+    "button-bar"
+    "."
+    "card-bar"
+    ;
+    justify-content: center;
+    margin: 120px auto 120px auto;
+    /* top | right | bottom | left */
 
 }
 .rcmd-header{
@@ -545,7 +535,7 @@ nav  li{
 }
 
 .testimoni-desc{
-    
+
     width: 508px;
     height: 167px;
 
@@ -570,3 +560,29 @@ nav  li{
     background-size: cover;
 }
 /* ------------- register-end ------------- */
+
+
+
+/* ================================== MEDIA-QUERY ================================== */
+@media screen and (max-width: 767px){
+    .button-panel{
+        flex-wrap: wrap;
+    }
+
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    
+    .container{
+        margin: auto 20px auto 20px;
+        /* top | right | bottom | left */
+    }
+}
+
+
+
+
+/* ================================== MEDIA-QUERY-end ================================== */
+
