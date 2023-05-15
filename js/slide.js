@@ -1,18 +1,12 @@
 
 // ------------------ hero-slide-start ------------------
-const swiper = new Swiper('.hero', {
+let swiper = new Swiper('.hero', {
+  
     // Optional parameters
     effect:'fade',
     loop: true,
     speed: 500,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-
-     
+    allowTouchMove: false,
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
@@ -20,15 +14,9 @@ const swiper = new Swiper('.hero', {
     },
   
 
-
-    // And if we need scrollbar 
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
   });
 
 // ------------------ hero-slide-end ------------------
- 
 
 
 // ------------------ AOS.js-start ------------------
@@ -36,36 +24,61 @@ AOS.init();
 // ------------------ AOS.js-end ------------------
 
 // ------------------ testimoni-slide-start ------------------
- const swiper2 = new Swiper ('.rcmd-card-bar',{
+// const progressCircle = document.querySelector(".autoplay-progress svg");
+// const progressContent = document.querySelector(".autoplay-progress span");
+let testimoni_slide = new Swiper ('.testimoni',{
       // Optional parameters
-      effect:'fade',
+      effect:'cube',
       loop: true,
       speed: 500,
-    
-      // If we need pagination
+      allowTouchMove: false,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+
+      keyboard: {
+        enabled: true,
+      },
+
       pagination: {
-        el: '.swiper-pagination',
+        el: ".swiper-pagination",
       },
+   
+      
     
-  
-       
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    
-  
-  
-      // And if we need scrollbar 
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
+});
 
-
-
- })
 // ------------------ testimoni-slide-end ------------------
+
+// ------------------ top-member-slide-start ------------------
+
+let top_member_slide = new Swiper ('.member-card-bar',{
+  // Optional parameters
+  effect:'coverflow',
+  coverflowEffect: {
+    rotate: 30,
+    slideShadows: false,
+    depth: 150,
+    stretch: -70,
+  },
+  loop: true,
+  speed: 500,
+  slidesPerView: 2,
+  spaceBetween: 10,
+  centeredSlides: true,
+  allowTouchMove: false,
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+}
+
+
+  
+
+});
+// ------------------ top-member-slide-end ------------------
+
 
 
 

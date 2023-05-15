@@ -18,8 +18,10 @@
   
   .popup {
     display: none;
+   overflow-y: scroll;
   }
  
+
   .popup-close-btn{
     left: 100%;
     position: relative;

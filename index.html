@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/popup.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
@@ -67,6 +64,7 @@
 
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
+
     </section>
 
     <div class="button-bar container ">
@@ -188,56 +186,66 @@
 
         <!-- OFFER-DESCRIPTION -->
         <div class="popup">
-            <button id="close-popup" class="popup-close-btn"><i class="fa-solid fa-circle-xmark"></i></button>
-            <h3>8 Keunggulan Asuransi Proteksi Delapan (Pro-8):</h3>
-            <ol>
-                <li>Asuransi jiwa selama 8 tahun</li>
-                <li>Manfaat Asuransi sebesar 108% dari premi pada akhir Masa Pertanggungan</li>
-                <li>Manfaat pengembalian Premi</li>
-                <li>Nilai tunai sudah terbentuk sejak akhir tahun pertama</li>
-                <li>Masa Pembayaran Premi hanya 5 tahun saja</li>
-                <li>Tidak dikenakan biaya administrasi tambahan</li>
-                <li>Premi terjangkau dan berlaku untuk semua usia</li>
-                <li>Manfaat produk sudah pasti dan dijamin</li>
-            </ol>
-            <br>
-            <h3>Manfaat Asuransi</h3>
-            <p>Manfaat Meninggal Dunia</p>
-            <ul>
-                <li>Jika Tertanggung meninggal dunia bukan karena kecelakaan dalam 2 (dua) tahun pertama Masa
-                    Pertanggungan, maka Yang Ditunjuk akan menerima Manfaat Pertanggungan berupa pengembalian Premi yang
-                    telah dibayarkan (tidak termasuk ekstra premi). Selanjutnya pertanggungan berakhir
-                </li>
-                <li>Jika Tertanggung meninggal dunia bukan karena kecelakaan setelah Masa Pertanggungan melebihi 2 (dua)
-                    tahun dan pertanggungan masih berlaku, maka Yang Ditunjuk akan menerima Manfaat Pertanggungan
-                    sebesar Uang Pertanggungan ditambah Nilai Tunai yang dihitung secara proporsional dari tabel Nilai
-                    Tunai. Selanjutnya pertanggungan berakhir.
-                </li>
-                <li>Jika Tertanggung meninggal dunia karena kecelakaan dalam Masa Pertanggungan, Yang Ditunjuk akan
-                    menerima Manfaat Pertanggungan sebesar Uang Pertanggungan ditambah Nilai Tunai yang dihitung secara
-                    proporsional dari tabel Nilai Tunai. Selanjutnya pertanggungan berakhir.
-                </li>
-            </ul>
-            <p>Manfaat Habis Kontrak</p>
-            <ul>
-                <li>Jika Tertanggung tetap hidup pada akhir Masa Pertanggungan, Pemegang Polis akan menerima Manfaat
-                    Habis Kontrak. Selanjutnya pertanggungan berakhir
-                </li>
-            </ul>
-            <p>Manfaat Putus Kontrak</p>
-            <ul>
-                <li>Jika terjadi Putus Kontrak dalam Masa Pertanggungan, Pemegang Polis akan menerima Nilai Tunai yang
-                    dihitung secara proporsional dari tabel Nilai Tunai. Selanjutnya pertanggungan berakhir.</li>
-            </ul>
-            <q>
-                Keterangan :
-                Tidak ada Nilai Tunai untuk Manfaat Meninggal Dunia atau Putus Kontrak yang terjadi sebelum usia Polis 1
-                (satu) tahun.
-                Perhitungan Nilai Tunai secara proporsional:
-                Nilai Tunai tahun ke-(t) + m/12 x {Nilai Tunai tahun ke-(t+1) – Nilai Tunai tahun ke-(t)}.
-                t = usia polis dalam tahun
-                m = bulan yang telah dilalui pada tahun ke-(t)
-            </q>
+            <button id="close-popup" class="popup-close-btn">
+                <ion-icon name="close-circle-outline"></ion-icon>
+            </button>
+            <div class="popup-content">
+                <h3>8 Keunggulan Asuransi Proteksi Delapan (Pro-8):</h3>
+                <ol>
+                    <li>Asuransi jiwa selama 8 tahun</li>
+                    <li>Manfaat Asuransi sebesar 108% dari premi pada akhir Masa Pertanggungan</li>
+                    <li>Manfaat pengembalian Premi</li>
+                    <li>Nilai tunai sudah terbentuk sejak akhir tahun pertama</li>
+                    <li>Masa Pembayaran Premi hanya 5 tahun saja</li>
+                    <li>Tidak dikenakan biaya administrasi tambahan</li>
+                    <li>Premi terjangkau dan berlaku untuk semua usia</li>
+                    <li>Manfaat produk sudah pasti dan dijamin</li>
+                </ol>
+                <br>
+                <h3>Manfaat Asuransi</h3>
+                <p>Manfaat Meninggal Dunia</p>
+                <ul>
+                    <li>Jika Tertanggung meninggal dunia bukan karena kecelakaan dalam 2 (dua) tahun pertama Masa
+                        Pertanggungan, maka Yang Ditunjuk akan menerima Manfaat Pertanggungan berupa pengembalian Premi
+                        yang
+                        telah dibayarkan (tidak termasuk ekstra premi). Selanjutnya pertanggungan berakhir
+                    </li>
+                    <li>Jika Tertanggung meninggal dunia bukan karena kecelakaan setelah Masa Pertanggungan melebihi 2
+                        (dua)
+                        tahun dan pertanggungan masih berlaku, maka Yang Ditunjuk akan menerima Manfaat Pertanggungan
+                        sebesar Uang Pertanggungan ditambah Nilai Tunai yang dihitung secara proporsional dari tabel
+                        Nilai
+                        Tunai. Selanjutnya pertanggungan berakhir.
+                    </li>
+                    <li>Jika Tertanggung meninggal dunia karena kecelakaan dalam Masa Pertanggungan, Yang Ditunjuk akan
+                        menerima Manfaat Pertanggungan sebesar Uang Pertanggungan ditambah Nilai Tunai yang dihitung
+                        secara
+                        proporsional dari tabel Nilai Tunai. Selanjutnya pertanggungan berakhir.
+                    </li>
+                </ul>
+                <p>Manfaat Habis Kontrak</p>
+                <ul>
+                    <li>Jika Tertanggung tetap hidup pada akhir Masa Pertanggungan, Pemegang Polis akan menerima Manfaat
+                        Habis Kontrak. Selanjutnya pertanggungan berakhir
+                    </li>
+                </ul>
+                <p>Manfaat Putus Kontrak</p>
+                <ul>
+                    <li>Jika terjadi Putus Kontrak dalam Masa Pertanggungan, Pemegang Polis akan menerima Nilai Tunai
+                        yang
+                        dihitung secara proporsional dari tabel Nilai Tunai. Selanjutnya pertanggungan berakhir.</li>
+                </ul>
+                <q>
+                    Keterangan :
+                    Tidak ada Nilai Tunai untuk Manfaat Meninggal Dunia atau Putus Kontrak yang terjadi sebelum usia
+                    Polis 1
+                    (satu) tahun.
+                    Perhitungan Nilai Tunai secara proporsional:
+                    Nilai Tunai tahun ke-(t) + m/12 x {Nilai Tunai tahun ke-(t+1) – Nilai Tunai tahun ke-(t)}.
+                    t = usia polis dalam tahun
+                    m = bulan yang telah dilalui pada tahun ke-(t)
+                </q>
+            </div>
         </div>
         <!-- OFFER-DESCRIPTION-END -->
 
@@ -279,86 +287,340 @@
 
         </div>
     </section>
-    <section class="rcmd container" data-aos="fade-up" id="testimoni">
-        <!-- grid container beta start -->
-        <div class="rcmd-grid">
-            <h1 class="rcmd-header">Testimonial Agency 3i-Networks</h1>
-            <div class="rcmd-button-bar flex-center">
-                <button class="rcmd-button">Popular</button>
-                <button class="rcmd-button">Advanture</button>
-                <button class="rcmd-button">Beath</button>
+    <div class="flex-center">
+        <h1 class="offer-header">Testimonial Agency 3i-Networks</h1>
+    </div>
+    <br><br>
+    <section class="testimoni-bar container" id="testimoni">
+        <div class="testimoni">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide testimoni-card">
+                    <div class="testimoni-img" style="background-image: url(./img/testimoni-1.png);">
+                        <div class="testimoni-time"> <img src="./img/icons/icons8-calendar-50.png" alt="calendar"
+                                width="30"> <span>13 April 2023</span></div>
+                    </div>
+                    <div class="testimoni-content">
+                        <div class="testimoni-header">Hajar Kesawa Jati Ahli Waris Warsini</div>
+                        <div class="testimoni-desc">
+                            <p>Kesan pelayanan cukup baik, uang asuransi cair tidak menunggu waktu yang lama dan
+                                syaratnya
+                                mudah (tidak dipersulit). Semoga menjadi asuransi yang lebih baik.</p>
+                        </div>
+                        <div class="testimoni-location"><img src="./img/icons/Location.svg" alt="location">
+                            <p>Yogyakarta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide testimoni-card">
+                    <div class="testimoni-img" style="background-image: url(./img/testimoni-2.png);">
+                        <div class="testimoni-time"><img src="./img/icons/icons8-calendar-50.png" alt="calendar"
+                                width="30"><span>6 April 2023</span></div>
+                    </div>
+                    <div class="testimoni-content">
+                        <div class="testimoni-header">Nur Haili Ahli Waris Ahmad Yani</div>
+                        <div class="testimoni-desc">
+                            <p>Kami ucapkan terima kasih kepada PT AJ Central Asia Raya yang sudah membantu berkat dana
+                                asuransi yang sangat bermanfaat bagi keluarga yang ditinggalkan.
+                                Sekali lagi kami mengucapkan terima kasih kepada program 3i-Networks yang sudah
+                                memberikan
+                                bukti bukan sekedar janji dan semoga kedepannya makin maju dan menjadi asuransi terbaik
+                                di
+                                Indonesia.</p>
+                        </div>
+                        <div class="testimoni-location"><img src="./img/icons/Location.svg" alt="location">
+                            <p>Mataram</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide testimoni-card">
+                    <div class="testimoni-img" style="background-image: url(./img/testimoni-3.png);">
+                        <div class="testimoni-time"> <img src="./img/icons/icons8-calendar-50.png" alt="calendar"
+                                width="30"> <span>3 April 2023</span></div>
+                    </div>
+                    <div class="testimoni-content">
+                        <div class="testimoni-header">Muhammad Hairul Wazni Ahli Waris Sahim</div>
+                        <div class="testimoni-desc">
+                            <p>Saya ucapkan terima kasih banyak untuk pihak CAR karena mulai dari pelayanan dan
+                                lain-lain
+                                kami selaku nasabah sangat puas. Dan sebagai ahli waris dari Almarhumah, pemiliki polis
+                                tentu juga berterima kasih sebanyak-banyaknya. Intinya kami sangat puas denga CAR Life
+                                Insurance.</p>
+                        </div>
+                        <div class="testimoni-location"><img src="./img/icons/Location.svg" alt="location">
+                            <p>Mataram</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide testimoni-card">
+                    <div class="testimoni-img" style="background-image: url(./img/testimoni-4.png);">
+                        <div class="testimoni-time"><img src="./img/icons/icons8-calendar-50.png" alt="calendar"
+                                width="30"><span>3 April 2023</span></div>
+                    </div>
+                    <div class="testimoni-content">
+                        <div class="testimoni-header">Maria Ahli Waris Lukas Pada Narek</div>
+                        <div class="testimoni-desc">
+                            <p>Untuk pengajuan klaimnya tidak sulit yang kami bayangkan dan selama proses pengajuan
+                                klaim
+                                Almarhum Suami saya berjalan dengan baik sampai klaim tersebut dibayarkan atau
+                                ditransfer ke
+                                rekening saya kurang lebih sekitar satu bulan.
+                                Terima kasih kepada PT AJ Central Asia Raya. Semoga kedepannya menjadi semakin lebih
+                                baik
+                                lagi dan buat kalangan masyarakat pesan saya asuransi itu sangat penting untuk proteksi
+                                jiwa
+                                kita dan saya sudah merasakannya.</p>
+                        </div>
+                        <div class="testimoni-location"><img src="./img/icons/Location.svg" alt="location">
+                            <p>Batam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide testimoni-card">
+                    <div class="testimoni-img" style="background-image: url(./img/testimoni-5.png);">
+                        <div class="testimoni-time"> <img src="./img/icons/icons8-calendar-50.png" alt="calendar"
+                                width="30"> <span> 24 Maret 2023 </span></div>
+                    </div>
+                    <div class="testimoni-content">
+                        <div class="testimoni-header">Siswanto Ahli Waris Sumarni</div>
+                        <div class="testimoni-desc">
+                            <p>Alhamdulliah klaim istri almarhumah Ibu Sumarni sudah cair sebesar 21 juta rupiah.
+                                Atas nama ahli waris, saya puas dengan pelayanan CAR yang tidak berbelit-belit.
+                                Tidak sampai 2 bulan klaim sudah cair ke rekening saya.
+
+                                Terima kasih CAR.
+                                CAR tidak memberi janji tapi memberi bukti. Semoga CAR tambah jaya</p>
+                        </div>
+                        <div class="testimoni-location"><img src="./img/icons/Location.svg" alt="location">
+                            <p>Semarang</p>
+                        </div>
+                    </div>
+                    <!-- autoplay progress swiperjs -->
+
+                </div>
+
             </div>
-            <div class="rcmd-card-bar flex-center">
-                <!-- <div class="swiper-wrapper"> -->
-                    <div class="rcmd-card swiper-slide">
-                        <div class="rcmd-img"
-                            style="background-image: url(./img/lake.jpg); background-position: center;">
-                        </div>
-                        <div class="rcmd-name">Kina Mountain</div>
-                        <div class="rcmd-loc">Cambonia</div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- ------------------- top-member-section ------------------- -->
+    </section id="member">
+    <div class="flex-center">
+        <h1 class="offer-header">Hidup Sukses Bersama CROWN AGENCY</h1>
+    </div>
+    <div class="member-card-bar container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="top-member-card">
+                    <div class="quote" style="position: relative;"><img src="./img/icons/quote.svg" alt=""></div>
+                    <div class="crown-desc">
+                        <p> Kuan Cen, mantan TOP Leader MLM, mencapai gelar CROWN dalam waktu hanya 7 bulan. Prestasi
+                            ini
+                            menunjukkan keahlian dan dedikasinya dalam mengembangkan bisnis MLM serta kemampuannya
+                            memimpin
+                            tim dengan sukses. </p>
+                        <div class="crown-num">Crown-1</div>
+                        <div class="crown-name">Kuan Cen</div>
                     </div>
-                    <div class="rcmd-card swiper-slide">
-                        <div class="rcmd-img"
-                            style="background-image: url(./img/mountain\ hills.jpg); background-position: center;">
-                        </div>
-                        <div class="rcmd-name">Kina Mountain</div>
-                        <div class="rcmd-loc">Cambonia</div>
+
+                    <div class="crown-img" style="background-image: url(./img/crown/kuan\ chen.png);"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="top-member-card">
+                    <div class="quote"><img src="./img/icons/quote.svg" alt="logo quote"></div>
+                    <div class="crown-desc">
+                        <p> Yoseph Setiawan, pria muda berusia 27 tahun, mencapai gelar CROWN setelah
+                            bekerja sebagai karyawan selama 1 tahun 11 bulan.</p>
+
+                        <div class="crown-num">Crown-2</div>
+                        <div class="crown-name">Yoseph Setiawan</div>
                     </div>
-                    <div class="rcmd-card swiper-slide">
-                        <div class="rcmd-img"
-                            style="background-image: url(./img/blue\ beach2.jpg); background-position: center;"></div>
-                        <div class="rcmd-name">Kina Mountain</div>
-                        <div class="rcmd-loc">Cambonia</div>
+                    <div class="crown-img" style="background-image: url(./img/crown/yosep\ setiawan.png);"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="top-member-card">
+                    <div class="quote"><img src="./img/icons/quote.svg" alt="logo quote"></div>
+                    <div class="crown-desc">
+                        <p> Afrial Tabrani, seorang pria bernama Afrial Tabrani, memiliki latar belakang
+                            sebagai mantan kondektur bus yang telah berhasil meraih gelar CROWN setelah menekuni profesi
+                            tersebut selama 3,5 tahun.</p>
+
+                        <div class="crown-num">Crown-3</div>
+                        <div class="crown-name">Afrial Tabrani</div>
                     </div>
-                    <div class="rcmd-card swiper-slide">
-                        <div class="rcmd-img"
-                            style="background-image: url(./img/coconut\ tree.jpg); background-position: center;"></div>
-                        <div class="rcmd-name">Kina Mountain</div>
-                        <div class="rcmd-loc">Cambonia</div>
+                    <div class="crown-img" style="background-image: url(./img/crown/Afrial\ Tabrani.png);"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="top-member-card">
+                    <div class="quote"><img src="./img/icons/quote.svg" alt="logo quote"></div>
+                    <div class="crown-desc">
+                        <p> Axiang Zuu, mantan pengusaha dealer mobil mewah, berhasil mencapai gelar
+                            CROWN dalam waktu singkat yaitu 3,5 tahun, berkat keahliannya dan kepemimpinannya yang
+                            gemilang.</p>
+
+                        <div class="crown-num">Crown-4</div>
+                        <div class="crown-name">Axiang Zuu</div>
                     </div>
-                <!-- </div> -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-        
+                    <div class="crown-img" style="background-image: url(./img/crown/Axiang\ Zhu.png);"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="top-member-card">
+                    <div class="quote"><img src="./img/icons/quote.svg" alt="logo quote"></div>
+                    <div class="crown-desc">
+                        <p>Arya Wirajaya, seorang mantan pelaku dalam industri MONEY GAME, berhasil
+                            mencapai gelar CROWN dalam rentang waktu 3,5 tahun yang menakjubkan. Arya Wirajaya adalah
+                            contoh
+                            nyata seorang profesional yang sukses, mampu menghadapi berbagai tantangan dan meraih
+                            kesuksesan
+                            dalam industri yang kompetitif seperti ini.</p>
+                        <div class="crown-num">Crown-5</div>
+                        <div class="crown-name">Arya Wirajaya</div>
+                    </div>
+
+                    <div class="crown-img" style="background-image: url(./img/crown/Arya\ Wijaya.png);"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="top-member-card">
+                    <div class="quote"><img src="./img/icons/quote.svg" alt="logo quote"></div>
+                    <div class="crown-desc">
+                        <p> Danny Djohan, seorang pengusaha yang berbakat, mencapai puncak karier dengan
+                            meraih gelar CROWN dalam waktu 3,6 tahun. Keberhasilannya mengelola bisnis dengan dedikasi
+                            dan
+                            keahlian luar biasa, mengilhami banyak orang yang bercita-cita meraih kesuksesan serupa
+                            dalam
+                            dunia wirausaha.</p>
+                        <div class="crown-num">Crown-6</div>
+                        <div class="crown-name">Danny Djohan</div>
+                    </div>
+
+                    <div class="crown-img" style="background-image: url(./img/crown/Danny\ Djohan.png);"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="top-member-card">
+                    <div class="quote"><img src="./img/icons/quote.svg" alt="logo quote"></div>
+                    <div class="crown-desc">
+                        <p>Raymond Fritz Sitanggang, seseorang yang membuktikan bahwa kesuksesan tidak
+                            mengenal batasan profesi, karena dia berhasil meraih CROWN sebagai mantan Penjual Daging
+                            Keliling dalam waktu luar biasa singkat, hanya dalam 3,6 tahun.</p>
+                        <div class="crown-num">Crown-7</div>
+                        <div class="crown-name">Raymond Fritz Sitanggang</div>
+                    </div>
+
+                    <div class="crown-img" style="background-image: url(./img/crown/Raymond\ Fritz\ Sitanggang.png);">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="top-member-card">
+                    <div class="quote"><img src="./img/icons/quote.svg" alt="logo quote"></div>
+                    <div class="crown-desc">
+                        <p>Meilina Lay, seorang profesional luar biasa yang berhasil mencapai puncak
+                            karirnya sebagai mantan TOP Agen Asuransi Prudential dalam waktu singkat, hanya dalam waktu
+                            3,6
+                            tahun, dan meraih penghargaan prestisius CROWN.</p>
+                        <div class="crown-num">Crown-8</div>
+                        <div class="crown-name">Meilina Lay</div>
+                    </div>
+
+                    <div class="crown-img" style="background-image: url(./img/crown/Meilina\ Lay.png);"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="top-member-card">
+                    <div class="quote"><img src="./img/icons/quote.svg" alt="logo quote"></div>
+                    <div class="crown-desc">
+                        <p>Arya Setyaki, sosok inspiratif yang menjelma dari seorang Pengusaha Property
+                            biasa menjadi sosok yang memperoleh penghargaan bergengsi CROWN dalam waktu yang luar biasa
+                            singkat, yaitu hanya dalam 3,6 tahun, membuktikan kemampuan dan dedikasinya yang luar biasa
+                            dalam industri properti.</p>
+                        <div class="crown-num">Crown-9</div>
+                        <div class="crown-name">Arya Setyaki</div>
+                    </div>
+
+                    <div class="crown-img" style="background-image: url(./img/crown/Arya\ Setiyaki.png);"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="top-member-card">
+                    <div class="quote"><img src="./img/icons/quote.svg" alt="logo quote"></div>
+                    <div class="crown-desc">
+                        <p> Sarno, seorang individu yang menunjukkan betapa luar biasanya kemampuan
+                            seseorang untuk mencapai kesuksesan, meskipun sebelumnya berprofesi sebagai mantan SATPAM,
+                            dia
+                            berhasil meraih prestasi gemilang dengan memperoleh CROWN dalam waktu yang sangat singkat,
+                            hanya
+                            dalam 3,7 tahun.</p>
+
+                        <div class="crown-num">Crown-10</div>
+                        <div class="crown-name">Sarno</div>
+                    </div>
+
+                    <div class="crown-img" style="background-image: url(./img/crown/Sarno.png);"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="top-member-card">
+                    <div class="quote"><img src="./img/icons/quote.svg" alt="logo quote"></div>
+                    <div class="crown-desc">
+                        <p> Herri Purnomo, seorang Pengusaha yang menginspirasi dan membuktikan bahwa
+                            ketekunan dan keberanian dapat membawa seseorang meraih puncak kesuksesan, terbukti dengan
+                            prestasinya meraih penghargaan bergengsi CROWN dalam waktu yang menakjubkan, hanya dalam
+                            jangka
+                            waktu singkat 3,7 tahun.</p>
+                        <div class="crown-num">Crown-11</div>
+                        <div class="crown-name">Herri Purnomo</div>
+                    </div>
+
+                    <div class="crown-img" style="background-image: url(./img/crown/Heeri\ Purowo.png);"></div>
+                </div>
+
             </div>
         </div>
-
-        <!-- grid container beta end -->
-    </section>
-    <section class="testimoni container" data-aos="fade-up" id="member">
-        <div class="testimoni-card-bar flex-center">
-            <div class="testimoni-card flex-column" style="background-image: url(./img/kutip.png);">
-                <p class="testimoni-desc">Our trip to Morocco was truly a onece in a lifetime experience and we are so
-                    grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.
-                </p>
-                <p class="testimoni-name">-Vand D</p>
-                <p class="testimoni-feed">Happy Treloo</p>
+        <div class="flex-center">
+            <div class="top-member-button">
+                <div class="swiper-button-prev member-btn">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </div>
+                <div class="swiper-button-next member-btn">
+                    <ion-icon name="chevron-forward-outline" ></ion-icon>
+                </div>
             </div>
-            <div class="testimoni-card flex-column" style="background-image: url(./img/kutip.png);">
-                <p class="testimoni-desc">Our trip to Morocco was truly a onece in a lifetime experience and we are so
-                    grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.
-                </p>
-                <p class="testimoni-name">-Vand D</p>
-                <p class="testimoni-feed">Happy Treloo</p>
-            </div>
-
-
         </div>
-        <div class="testimoni-button"></div>
+    </div>
+
+
     </section>
+    <!-- ------------------- top-member-section-end ------------------- -->
+
 
     <section class="register container flex-center" style="background-image: url(./img/space.jpg);" data-aos="fade-up"
         id="">
-        <h1 class="register-banner">Don’t Miss The 50% Discount if You register Today</h1>
-        <button>Register Today</button>
+        <h1 class="register-banner">Lindungi diri Anda hari ini! Daftar asuransi sekarang juga.</h1>
+        <button class="register-btn">Register Today</button>
     </section>
 
-    <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/slide.js"></script>
-    <script src="./js/popup.js"></script>
+    <footer class="container">&copy; 2023 CAR3i-Networks - All right reserved.
+        <div class="footer-menu">
+            <ol>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#member">Top Member</a></li>
+            </ol>
+        </div>
+    </footer>
 
 </body>
-
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./js/slide.js"></script>
+<script src="./js/popup.js"></script>
 </html>
