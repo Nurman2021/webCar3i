@@ -1,0 +1,271 @@
+:root {
+  --white-primary: #ffff;
+  --black-primary: #000;
+  --blue-primary: #3E86F5;
+  --black-75: #7c7c7c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /*border: solid red 1px;*/
+}
+
+#mainNav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: background .3s ease-in-out, padding-top .3s ease-in-out, padding-bottom .3s;
+  letter-spacing: 1px;
+  border-bottom: none;
+  background: transparent;
+}
+
+#mainNav.navbar-shrink {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+  background: #000;
+}
+
+.swiper-slide {
+  background-size: cover;
+}
+
+/* ======================================================== uncategorized ======================================================== */
+
+body {
+  background: #F7F7F7;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ======================================================== uncategorized ======================================================== */
+
+/* ------------- hero ------------- */
+
+.hero .swiper-slide {
+  height: 100vh;
+}
+
+.hero {
+  height: 100%;
+}
+
+.hero .swiper-slide {
+  height: 100vh;
+}
+
+.hero-brand h1 {
+  font-size: 64px;
+}
+
+.hero-brand p {
+  font-size: 1em;
+}
+
+.hero-brand {
+  text-align: center;
+}
+
+/* ------------- hero-end ------------- */
+
+/* ------------- offer-bar ------------- */
+
+.offer-card {
+  background-color: var(--white-primary);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
+  display: grid;
+  border-radius: 50px;
+  padding: 35px;
+  grid-template-rows: 286px 10px 89px;
+  grid-template-areas: "baris-1" "." "baris-2";
+  justify-content: center;
+}
+
+.baris-1 {
+  display: grid;
+  grid-area: baris-1;
+  width: 323px;
+  grid-template-columns: 293px 1fr;
+  grid-template-areas: "foto txt";
+  align-items: center;
+}
+
+.baris-2 {
+  display: grid;
+  grid-area: baris-2;
+  width: 323px;
+  grid-template-columns: 1fr 107px;
+  grid-template-areas: "kol-1 kol-2";
+}
+
+.kol-1 {
+  grid-area: kol-1;
+}
+
+.kol-2 {
+  display: flex;
+  align-items: flex-end;
+  grid-area: kol-2;
+}
+
+.offer-img {
+  width: 293px;
+  height: 273px;
+  border-radius: 50px;
+  background-size: cover;
+}
+
+.offer-side-text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 27px;
+  letter-spacing: 0.4em;
+  grid-area: txt;
+  color: var(--black-75);
+  writing-mode: vertical-rl;
+}
+
+.offer-type {
+  width: 108px;
+  height: 21px;
+  background-color: #FCDDEC;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #F178B6;
+  text-align: center;
+}
+
+.offer-name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.offer-price {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--black-75);
+  margin-bottom: 10px;
+}
+
+.continue-btn {
+  width: 107px;
+  height: 47px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+/* ------------- offer-bar-end ------------- */
+
+/* ------------- crown-member ------------- */
+
+.member-card-bar {
+  overflow: hidden;
+  height: 600px;
+  padding: 20px 0 20px 0;
+}
+
+.top-member-card {
+  background-color: var(--white-primary);
+  border-radius: 25px;
+  height: 410px;
+  max-width: 500px;
+  box-shadow: -1px 3px 19px 3px rgba(0, 0, 0, 0.29);
+  -webkit-box-shadow: -1px 3px 19px 3px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: -1px 3px 19px 3px rgba(0, 0, 0, 0.29);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 42px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.crown-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 355px;
+  z-index: 3;
+  box-shadow: rgba(0,0,0,.5);
+}
+
+.crown-desc {
+  text-align: center;
+  color: var(--black-primary);
+  z-index: 2;
+  top: -100px;
+  position: relative;
+}
+
+.crown-num {
+  color: var(--blue-primary);
+}
+
+.crown-name {
+  color: var(--black-75);
+}
+
+.quote {
+  z-index: 1;
+}
+
+/* ------------- crown-member-end ------------- */
+
+/* ------------- testimoni ------------- */
+
+.testimoni-card {
+  border-radius: 25px;
+}
+
+.testimoni-img {
+  /*grid-area: foto;*/
+  height: 400px;
+  width: 500px;
+  border-radius: 25px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: end;
+}
+
+.testimoni-time {
+  border-radius: 25px;
+  background-color: var(--white-primary);
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 145px;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.testimoni-location {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/* ------------- testimoni-end ------------- */
+

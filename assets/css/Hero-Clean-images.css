@@ -1,0 +1,15 @@
+.fit-cover {
+  object-fit: cover;
+}
+
+.box-round-product {
+  margin: 10px;
+}
+
+.list-product {
+  background: var(--blue-primary);
+  color: var(--white-primary);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
